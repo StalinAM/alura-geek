@@ -1,21 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
+import Input from "../components/Input.astro";
 ---
 
 <Layout title="hola">
-    <main class="bg-gray-100 flex items-center flex-col">
-        <h1 class="font-bold">Iniciar Sesión</h1>
-        <form class="flex flex-col w-72 gap-4" action="">
-            <input
-                class="p-4 rounded"
-                placeholder="Escriba su correo electrónico"
-                type="text"
-                name=""
-                id=""
-            />
-            <input class="rounded p-4" type="text" name="" id="" />
-            <Button text="entrar" />
+    <main
+        class="bg-gray-100 flex items-center flex-col min-h-[60vh] w-full justify-center gap-4"
+    >
+        <h1 class="font-bold lg:text-lg">Iniciar Sesión</h1>
+        <form
+            class="flex flex-col w-72 lg:w-96 gap-4 [&>input]:bg-white [&>input]:py-2 [&>input]:px-4 [&>button]:w-full items-center"
+            action=""
+        >
+            <Input type="text" placeholder="Escriba su correo electrónico" />
+            <Input type="text" placeholder="Escriba su contraseña" />
+            <Button text="Entrar" />
         </form>
     </main>
 </Layout>
