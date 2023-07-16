@@ -1,0 +1,51 @@
+---
+import Button from "../components/Button.astro";
+import Input from "../components/Input.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="hola">
+    <main
+        class="bg-gray-100 flex items-center flex-col min-h-screen w-full justify-center gap-4"
+    >
+        <h1 class="font-bold lg:text-lg">Agregar nuevo producto</h1>
+        <form
+            class="flex flex-col w-72 lg:w-1/2 gap-4 [&>input]:bg-white [&>input]:py-2 [&>input]:px-4 [&>button]:w-full items-center"
+            action=""
+        >
+            <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
+                <label class="text-xs text-gray-400" for=""
+                    >URL de la imagen</label
+                >
+                <Input type="text" />
+            </div>
+            <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
+                <label class="text-xs text-gray-400" for="">Categoría</label>
+                <Input type="text" />
+            </div>
+            <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
+                <label class="text-xs text-gray-400" for=""
+                    >Nombre del producto</label
+                >
+                <Input type="text" />
+            </div>
+            <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
+                <label class="text-xs text-gray-400" for=""
+                    >Precio del producto</label
+                >
+                <Input type="text" />
+            </div>
+            <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
+                <label class="text-xs text-gray-400" for=""
+                    >Descripción del producto</label
+                >
+                <textarea
+                    class="font-medium bg-transparent focus:border-white focus-visible:outline-none focus:ring-white"
+                    name=""
+                    id=""
+                    rows="4"></textarea>
+            </div>
+            <Button text="Entrar" />
+        </form>
+    </main>
+</Layout>
