@@ -1,9 +1,10 @@
 ---
+import ListProducts from "../components/ListProducts.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome">
-	<main class="bg-gray-400">
-		<a href="/login">ir al login</a>
-	</main>
+  <main class="bg-gray-400">
+    <ListProducts title="Star Wars" />
+  </main>
 </Layout>
