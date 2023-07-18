@@ -1,10 +1,24 @@
 ---
 import ListProducts from "../components/ListProducts.astro";
 import Layout from "../layouts/Layout.astro";
+import { products } from "../data/products";
 ---
 
 <Layout title="Welcome">
-  <main class="bg-gray-400">
-    <ListProducts title="Star Wars" />
+  <main class="bg-gray-100 p-5 flex flex-col gap-4">
+    <ListProducts
+      title="Star Wars"
+      listProducts={products.filter((item) => item.category === "Star Wars")}
+    />
+    <ListProducts
+      title="Consolas"
+      listProducts={products.filter((item) => item.category === "Consolas")}
+    />
+    <ListProducts
+      title="Varios"
+      listProducts={products.filter(
+        (item) => item.category !== "Consolas" && item.category !== "Star Wars"
+      )}
+    />
   </main>
 </Layout>
