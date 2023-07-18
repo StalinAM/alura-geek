@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 1,
+    id: "1",
     name: "Sable de luz de Anakin Skywalker",
     price: 59.99,
     description:
@@ -9,7 +9,7 @@ export const products = [
     image: "/6.webp",
   },
   {
-    id: 2,
+    id: "2",
     name: "Figura de acción de Rey",
     price: 29.99,
     description:
@@ -18,7 +18,7 @@ export const products = [
     image: "/9.webp",
   },
   {
-    id: 3,
+    id: "3",
     name: "Nave espacial Millennium Falcon",
     price: 129.99,
     description:
@@ -27,7 +27,7 @@ export const products = [
     image: "/12.webp",
   },
   {
-    id: 4,
+    id: "4",
     name: "Peluche de Baby Yoda",
     price: 19.99,
     description:
@@ -36,7 +36,7 @@ export const products = [
     image: "/15.webp",
   },
   {
-    id: 5,
+    id: "5",
     name: "Juego de mesa de Star Wars: Rebellion",
     price: 49.99,
     description:
@@ -45,7 +45,7 @@ export const products = [
     image: "/16.webp",
   },
   {
-    id: 6,
+    id: "6",
     name: "Camiseta de la Estrella de la Muerte",
     price: 14.99,
     description:
@@ -54,7 +54,7 @@ export const products = [
     image: "/17.webp",
   },
   {
-    id: 7,
+    id: "7",
     name: "PlayStation 5",
     price: 499.99,
     description:
@@ -63,7 +63,7 @@ export const products = [
     image: "/1.webp",
   },
   {
-    id: 8,
+    id: "8",
     name: "Xbox Series X",
     price: 499.99,
     description:
@@ -72,7 +72,7 @@ export const products = [
     image: "/2.webp",
   },
   {
-    id: 9,
+    id: "9",
     name: "Nintendo Switch",
     price: 299.99,
     description:
@@ -81,7 +81,7 @@ export const products = [
     image: "/3.webp",
   },
   {
-    id: 10,
+    id: "10",
     name: "PlayStation 4",
     price: 299.99,
     description:
@@ -90,7 +90,7 @@ export const products = [
     image: "/8.webp",
   },
   {
-    id: 11,
+    id: "11",
     name: "Xbox Series S",
     price: 299.99,
     description:
@@ -99,7 +99,7 @@ export const products = [
     image: "/13.webp",
   },
   {
-    id: 12,
+    id: "12",
     name: "Nintendo Switch Lite",
     price: 199.99,
     description:
@@ -108,7 +108,7 @@ export const products = [
     image: "/10.webp",
   },
   {
-    id: 13,
+    id: "13",
     name: "Camiseta de Star Wars",
     price: 19.99,
     description:
@@ -117,7 +117,7 @@ export const products = [
     image: "/4.webp",
   },
   {
-    id: 14,
+    id: "14",
     name: "Juego de mesa de Star Wars",
     price: 29.99,
     description:
@@ -126,7 +126,7 @@ export const products = [
     image: "/5.webp",
   },
   {
-    id: 15,
+    id: "15",
     name: "Figura coleccionable de Yoda",
     price: 39.99,
     description: "Figura detallada de Yoda con acabado pintado a mano.",
@@ -134,7 +134,7 @@ export const products = [
     image: "/6.webp",
   },
   {
-    id: 16,
+    id: "16",
     name: "Llavero de Millennium Falcon",
     price: 9.99,
     description:
@@ -143,7 +143,7 @@ export const products = [
     image: "/7.webp",
   },
   {
-    id: 17,
+    id: "17",
     name: "Taza de BB-8",
     price: 14.99,
     description: "Taza con diseño de BB-8, el simpático droide de Star Wars.",
@@ -151,7 +151,7 @@ export const products = [
     image: "/11.webp",
   },
   {
-    id: 18,
+    id: "18",
     name: "Libro de arte de Star Wars",
     price: 49.99,
     description:
