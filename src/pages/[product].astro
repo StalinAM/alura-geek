@@ -1,0 +1,23 @@
+---
+import ListProducts from "../components/ListProducts.astro";
+import { products } from "../data/products";
+import Layout from "../layouts/Layout.astro";
+const { product } = Astro.params;
+const info = products.find((item) => item.id === product);
+if (!info) {
+  return Astro.redirect("/404");
+}
+---
+
+<Layout title="Welcome">
+  <img class="w-full object-cover" src={info.image} alt={info.description} />
+  <div class="p-4 flex flex-col gap-2">
+    <h1 class="text-2xl font-semibold">{info.name}</h1>
+    <span class="text-gray-800 text-xl font-bold">${info.price}</span>
+    <p class="text-lg font-medium">{info.description}</p>
+    <ListProducts
+      title="Productos similares"
+      listProducts={products.filter((item) => item.category === info.category)}
+    />
+  </div>
+</Layout>
