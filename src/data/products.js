@@ -41,7 +41,7 @@ export const products = [
     price: 49.99,
     description:
       "Juego de estrategia donde los jugadores pueden controlar la Alianza Rebelde o el Imperio Galáctico.",
-    category: "Juegos",
+    category: "Star Wars",
     image: "/16.webp",
   },
   {
@@ -50,7 +50,7 @@ export const products = [
     price: 14.99,
     description:
       "Camiseta con el diseño de la Estrella de la Muerte, la estación espacial del Imperio.",
-    category: "Camisetas",
+    category: "Star Wars",
     image: "/17.webp",
   },
   {
