@@ -1,0 +1,26 @@
+---
+import Card from "./Card.astro";
+import { products } from "../data/products.js";
+const { title } = Astro.props;
+---
+
+---
+<section>
+  <h2>
+    {title}
+  </h2>
+  <ul>
+    {
+      products.map((item) => (
+        <Card
+          id={item.id}
+          name={item.name}
+          price={item.price}
+          description={item.description}
+          image={item.image}
+          category={item.category}
+        />
+      ))
+    }
+  </ul>
+</section>
