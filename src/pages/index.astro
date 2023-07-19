@@ -5,20 +5,32 @@ import { products } from "../data/products";
 ---
 
 <Layout title="Welcome">
-  <main class="bg-gray-100 p-5 flex flex-col gap-4">
-    <ListProducts
-      title="Star Wars"
-      listProducts={products.filter((item) => item.category === "Star Wars")}
-    />
-    <ListProducts
-      title="Consolas"
-      listProducts={products.filter((item) => item.category === "Consolas")}
-    />
-    <ListProducts
-      title="Varios"
-      listProducts={products.filter(
-        (item) => item.category !== "Consolas" && item.category !== "Star Wars"
-      )}
-    />
+  <main class="bg-gray-100 flex flex-col">
+    <section
+      class="flex flex-col text-white bg-[url('/bg.webp')] h-[200px] bg-cover bg-center justify-end p-4 items-start"
+    >
+      <h2 class="text-3xl font-semibold pb-4">Febrero Promocional</h2>
+      <p class="pb-2">Productos seleccionados con 33% de descuento</p>
+      <a class="bg-blue-600 py-2 px-6 rounded block hover:bg-blue-900" href="/"
+        >Ver Consolas</a
+      >
+    </section>
+    <div class="px-4 pb-4">
+      <ListProducts
+        title="Star Wars"
+        listProducts={products.filter((item) => item.category === "Star Wars")}
+      />
+      <ListProducts
+        title="Consolas"
+        listProducts={products.filter((item) => item.category === "Consolas")}
+      />
+      <ListProducts
+        title="Varios"
+        listProducts={products.filter(
+          (item) =>
+            item.category !== "Consolas" && item.category !== "Star Wars"
+        )}
+      />
+    </div>
   </main>
 </Layout>
