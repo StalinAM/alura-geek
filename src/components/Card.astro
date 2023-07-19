@@ -2,7 +2,7 @@
 const { id, name, price, description, image } = Astro.props;
 ---
 
-<li class="flex flex-col gap-2">
+<li class="flex flex-col gap-2 h-full">
   <img class="rounded-lg" src={image} alt={description} />
   <h2 class="font-medium text-gray-800">{name}</h2>
   <p class="font-bold text-gray-600 text-xl">$ {price}</p>
