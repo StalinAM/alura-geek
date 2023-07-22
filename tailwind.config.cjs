@@ -5,7 +5,11 @@ module.exports = {
     fontFamily: {
       sans: ["Raleway Variable"],
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        "box-x": "repeat(auto-fill, minmax(140px, 150px))",
+      },
+    },
   },
   plugins: [],
 };
