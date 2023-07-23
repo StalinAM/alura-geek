@@ -10,14 +10,26 @@ if (!info) {
 ---
 
 <Layout title="Welcome">
-  <img class="w-full object-cover" src={info.image} alt={info.description} />
-  <div class="p-4 flex flex-col gap-2">
-    <h1 class="text-2xl font-semibold">{info.name}</h1>
-    <span class="text-gray-800 text-xl font-bold">${info.price}</span>
-    <p class="text-lg font-medium">{info.description}</p>
-    <ListProducts
-      title="Productos similares"
-      listProducts={products.filter((item) => item.category === info.category)}
-    />
-  </div>
+  <main class="pb-4 p-4 xl:p-0 lg:max-w-5xl mx-auto">
+    <section class="flex flex-col md:flex-row items-center md:gap-8 mt-10">
+      <img
+        class="w-full object-cover md:w-1/2 rounded h-[300px]"
+        src={info.image}
+        alt={info.description}
+      />
+      <div class="pt-4 flex flex-col gap-2">
+        <h1 class="text-2xl font-semibold">{info.name}</h1>
+        <span class="text-gray-800 text-xl font-bold">${info.price}</span>
+        <p class="text-lg font-medium">{info.description}</p>
+      </div>
+    </section>
+    <section class="p-0 mb-10">
+      <ListProducts
+        title="Productos similares"
+        listProducts={products.filter(
+          (item) => item.category === info.category
+        )}
+      />
+    </section>
+  </main>
 </Layout>
