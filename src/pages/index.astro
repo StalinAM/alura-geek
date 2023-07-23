@@ -5,17 +5,22 @@ import { products } from "../data/products";
 ---
 
 <Layout title="Welcome">
-  <main class="bg-gray-100 flex flex-col">
+  <main class="bg-gray-100 flex flex-col w-full">
     <section
-      class="flex flex-col text-white bg-[url('/bg.webp')] h-[200px] bg-cover bg-center justify-end p-4 items-start"
+      class="bg-[url('/bg.webp')] h-[200px] bg-cover bg-centerp-4 bg-center"
     >
-      <h2 class="text-3xl font-semibold pb-4">Febrero Promocional</h2>
-      <p class="pb-2">Productos seleccionados con 33% de descuento</p>
-      <a class="bg-blue-600 py-2 px-6 rounded block hover:bg-blue-900" href="/"
-        >Ver Consolas</a
+      <div
+        class="flex flex-col p-4 lg:p-0 lg:max-w-5xl text-white justify-end items-start m-auto md:mt-[38px]"
       >
+        <h2 class="text-3xl font-semibold pb-4">Febrero Promocional</h2>
+        <p class="pb-2">Productos seleccionados con 33% de descuento</p>
+        <a
+          class="bg-blue-600 py-2 px-6 rounded block hover:bg-blue-900"
+          href="/">Ver Consolas</a
+        >
+      </div>
     </section>
-    <div class="px-4 pb-4">
+    <div class="px-4 pb-4 p-4 xl:p-0 lg:max-w-5xl lg:mx-auto mb-10">
       <ListProducts
         title="Star Wars"
         listProducts={products.filter((item) => item.category === "Star Wars")}
