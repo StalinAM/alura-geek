@@ -7,7 +7,8 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        "box-x": "repeat(auto-fill, minmax(140px, 150px))",
+        "box-s": "repeat(auto-fill, minmax(140px, 157px))",
+        "box-x": "repeat(auto-fill, minmax(140px, 170px))",
       },
     },
   },
