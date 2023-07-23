@@ -16,6 +16,7 @@ if (!info) {
         class="w-full object-cover md:w-1/2 rounded h-[300px]"
         src={info.image}
         alt={info.description}
+        style={`view-transition-name: product-${info.id}`}
       />
       <div class="pt-4 flex flex-col gap-2">
         <h1 class="text-2xl font-semibold">{info.name}</h1>
@@ -27,7 +28,7 @@ if (!info) {
       <ListProducts
         title="Productos similares"
         listProducts={products.filter(
-          (item) => item.category === info.category
+          (item) => item.category === info.category && item.id !== info.id
         )}
       />
     </section>
