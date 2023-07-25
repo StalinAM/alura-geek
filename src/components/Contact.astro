@@ -4,22 +4,22 @@ import Input from "./Input.astro";
 ---
 
 <section class="flex-1">
-    <h2 class="font-bold mb-1 text-gray-700">Hable con nosotros</h2>
-    <form class="flex flex-col gap-4 items-start w-full" action="">
-        <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
-            <label class="text-xs text-gray-400" for="">Nombre</label>
-            <Input type="text" />
-        </div>
-        <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
-            <label class="text-xs text-gray-400" for=""
-                >Escribe tu mensaje</label
-            >
-            <textarea
-                class="font-medium bg-transparent focus:border-white focus-visible:outline-none focus:ring-white"
-                name=""
-                id=""
-                rows="4"></textarea>
-        </div>
-        <Button text="Enviar mensaje" />
-    </form>
+  <h2 class="font-bold mb-1 text-gray-700">Hable con nosotros</h2>
+  <form class="flex flex-col gap-4 items-start w-full" action="">
+    <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
+      <label class="text-xs text-gray-400" for="name">Nombre</label>
+      <Input type="text" id="name" />
+    </div>
+    <div class="flex flex-col gap-1 p-2 bg-white rounded w-full">
+      <label class="text-xs text-gray-400" for="message"
+        >Escribe tu mensaje</label
+      >
+      <textarea
+        class="font-medium bg-transparent focus:border-white focus-visible:outline-none focus:ring-white"
+        name=""
+        id="message"
+        rows="4"></textarea>
+    </div>
+    <Button text="Enviar mensaje" />
+  </form>
 </section>

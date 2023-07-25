@@ -3,9 +3,10 @@ const { placeholder, id, type } = Astro.props;
 ---
 
 <input
-    class="font-medium bg-transparent focus:border-white focus-visible:outline-none focus:ring-white rounded w-full"
-    placeholder={placeholder}
-    type={type}
-    name=""
-    id=""
+  class="font-medium bg-transparent focus:border-white focus-visible:outline-none focus:ring-white rounded w-full"
+  placeholder={placeholder}
+  type={type}
+  name={id}
+  id={id}
+  autocomplete="additional-name"
 />
