@@ -30,17 +30,20 @@ import Lupa from "./icons/Lupa.astro";
   >
     Login</a
   >
-  <a href="/all-products" class="text-gray-700">
+  <a id="icon-filter" href="/all-products" class="text-gray-700">
     <Lupa />
   </a>
 </header>
 <script>
   const login = document.getElementById("link-login");
+  const iconFilter = document.getElementById("icon-filter");
   const URLactual = window.location;
   const { pathname } = URLactual;
   if (pathname === "/login") {
     login.classList.add("hidden");
+    iconFilter.classList.add("hidden");
   } else {
     login.classList.remove("hidden");
+    iconFilter.classList.remove("hidden");
   }
 </script>
