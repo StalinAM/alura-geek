@@ -26,7 +26,6 @@ export const startViewTransition = () => {
     event.intercept({
       async handler() {
         const data = await fetchPage(toUrl.pathname);
-
         // utilizar la api de View Transition API
         document.startViewTransition(() => {
           // el scroll hacia arriba del todo
