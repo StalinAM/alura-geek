@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
   <header
     class="max-w-5xl p-4 flex justify-between items-center mx-auto lg:px-0"
   >
-    <a href="/">
+    <a style="view-transition-name: product-logo" href="/">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="176"
@@ -34,25 +34,26 @@ import Layout from "../layouts/Layout.astro";
         ></svg
       >
     </a>
-
-    <form class="flex py-2 px-4 w-36 items-center bg-zinc-200 rounded-xl">
-      <span class="opacity-40 inline-block">
-        <Lupa />
-      </span>
-      <input
-        placeholder="Buscar item"
-        class="ml-2 bg-transparent focus:border-white focus-visible:outline-none focus:ring-white rounded w-full"
-        type="text"
-        name="name-product"
-        id="product-filter"
-      />
-    </form>
   </header>
   <main class="px-4 pb-4 p-4 xl:p-0 lg:max-w-5xl mx-auto">
     <div
       class="flex flex-col md:flex-row justify-between items-start my-6 gap-4"
     >
       <h1 class="text-2xl font-semibold">Todos los productos</h1>
+      <form
+        class="flex py-2 px-4 md:w-36 lg:w-96 items-center bg-zinc-200 rounded-xl"
+      >
+        <span class="opacity-40 inline-block">
+          <Lupa />
+        </span>
+        <input
+          placeholder="Buscar item"
+          class="ml-2 bg-transparent focus:border-white focus-visible:outline-none focus:ring-white rounded w-full"
+          type="text"
+          name="name-product"
+          id="product-filter"
+        />
+      </form>
     </div>
     <ul
       class="grid grid-cols-box-s gap-x-4 gap-y-5 mb-10 justify-center lg:max-w-6xl"
