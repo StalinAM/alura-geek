@@ -27,7 +27,7 @@ El objetivo de este desafío es completar la creación de una tienda en línea. 
 
 ### Enlaces
 
-- Solución URL: [Github](https://github.com/StalinAM/alura-geek.git)
+- Solución URL: [Alura-geek](https://alura-geek-viewtransition.netlify.app/)
 - Sítio en línea URL: [SVAM Potafolio](https://svam-alura.netlify.app/)
 
 ### Construido con:
