@@ -6,7 +6,7 @@ export const products = [
     description:
       "Réplica del sable de luz usado por Anakin Skywalker antes de convertirse en Darth Vader.",
     category: "Star Wars",
-    image: "/alura-geek/6.webp",
+    image: "/6.webp",
   },
   {
     id: "2",
@@ -15,7 +15,7 @@ export const products = [
     description:
       "Figura de acción detallada de Rey, la heroína de la trilogía más reciente de Star Wars.",
     category: "Star Wars",
-    image: "/alura-geek/9.webp",
+    image: "/9.webp",
   },
   {
     id: "3",
@@ -24,7 +24,7 @@ export const products = [
     description:
       "Modelo de la famosa nave espacial Millennium Falcon, pilotada por Han Solo y Chewbacca.",
     category: "Star Wars",
-    image: "/alura-geek/12.webp",
+    image: "/12.webp",
   },
   {
     id: "4",
@@ -33,7 +33,7 @@ export const products = [
     description:
       "Adorable peluche de Baby Yoda, también conocido como Grogu, de la serie 'The Mandalorian'.",
     category: "Star Wars",
-    image: "/alura-geek/15.webp",
+    image: "/15.webp",
   },
   {
     id: "5",
@@ -42,7 +42,7 @@ export const products = [
     description:
       "Juego de estrategia donde los jugadores pueden controlar la Alianza Rebelde o el Imperio Galáctico.",
     category: "Star Wars",
-    image: "/alura-geek/16.webp",
+    image: "/16.webp",
   },
   {
     id: "6",
@@ -51,7 +51,7 @@ export const products = [
     description:
       "Camiseta con el diseño de la Estrella de la Muerte, la estación espacial del Imperio.",
     category: "Star Wars",
-    image: "/alura-geek/17.webp",
+    image: "/17.webp",
   },
   {
     id: "7",
@@ -60,7 +60,7 @@ export const products = [
     description:
       "La última consola de Sony con gráficos de alta calidad y compatibilidad con juegos de última generación.",
     category: "Consolas",
-    image: "/alura-geek/1.webp",
+    image: "/1.webp",
   },
   {
     id: "8",
@@ -69,7 +69,7 @@ export const products = [
     description:
       "La consola más potente de Microsoft con capacidad de reproducción en 4K y una amplia biblioteca de juegos.",
     category: "Consolas",
-    image: "/alura-geek/2.webp",
+    image: "/2.webp",
   },
   {
     id: "9",
@@ -78,7 +78,7 @@ export const products = [
     description:
       "Consola híbrida que te permite jugar en casa o en cualquier lugar gracias a su diseño portátil.",
     category: "Consolas",
-    image: "/alura-geek/3.webp",
+    image: "/3.webp",
   },
   {
     id: "10",
@@ -87,7 +87,7 @@ export const products = [
     description:
       "Consola anterior de Sony con una amplia selección de juegos y entretenimiento multimedia.",
     category: "Consolas",
-    image: "/alura-geek/8.webp",
+    image: "/8.webp",
   },
   {
     id: "11",
@@ -96,7 +96,7 @@ export const products = [
     description:
       "Versión más económica de la Xbox Series X, ideal para juegos en resolución 1080p.",
     category: "Consolas",
-    image: "/alura-geek/13.webp",
+    image: "/13.webp",
   },
   {
     id: "12",
@@ -105,7 +105,7 @@ export const products = [
     description:
       "Versión más compacta y portátil de la Nintendo Switch, diseñada exclusivamente para juegos en modo portátil.",
     category: "Consolas",
-    image: "/alura-geek/10.webp",
+    image: "/10.webp",
   },
   {
     id: "13",
@@ -114,7 +114,7 @@ export const products = [
     description:
       "Camiseta con estampado del logotipo de Star Wars en color negro.",
     category: "Camisetas",
-    image: "/alura-geek/4.webp",
+    image: "/4.webp",
   },
   {
     id: "14",
@@ -123,7 +123,7 @@ export const products = [
     description:
       "Juego de estrategia basado en el universo de Star Wars con miniaturas y cartas.",
     category: "Juegos",
-    image: "/alura-geek/5.webp",
+    image: "/5.webp",
   },
   {
     id: "15",
@@ -131,7 +131,7 @@ export const products = [
     price: 39.99,
     description: "Figura detallada de Yoda con acabado pintado a mano.",
     category: "Muñecos",
-    image: "/alura-geek/6.webp",
+    image: "/6.webp",
   },
   {
     id: "16",
@@ -140,7 +140,7 @@ export const products = [
     description:
       "Llavero metálico con forma de la nave espacial Millennium Falcon.",
     category: "Accesorios",
-    image: "/alura-geek/7.webp",
+    image: "/7.webp",
   },
   {
     id: "17",
@@ -148,7 +148,7 @@ export const products = [
     price: 14.99,
     description: "Taza con diseño de BB-8, el simpático droide de Star Wars.",
     category: "Vajilla",
-    image: "/alura-geek/11.webp",
+    image: "/11.webp",
   },
   {
     id: "18",
@@ -157,6 +157,6 @@ export const products = [
     description:
       "Libro de tapa dura con ilustraciones y arte conceptual de las películas de Star Wars.",
     category: "Libros",
-    image: "/alura-geek/18.webp",
+    image: "/18.webp",
   },
 ];
