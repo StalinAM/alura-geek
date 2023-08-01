@@ -1,54 +1,47 @@
-# Astro Starter Kit: Basics
+# E-commerce - Challenge ONE Front-end Sprint 02
 
-```
-npm create astro@latest -- --template basics
-```
+![](./public/alura-geek.webp)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+El objetivo de este desafío es completar la creación de una tienda en línea. Actualmente, solo se ha desarrollado la parte visual, ya que fue concebida como una oportunidad para aprender acerca de la API View Transition. El propósito final es alcanzar una tienda completamente funcional que permita a los usuarios realizar compras de manera efectiva y proporcionar una experiencia de usuario óptima.
+## Table of contents
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [E-commerce - Challenge ONE Front-end Sprint 02](#e-commerce---challenge-one-front-end-sprint-02)
+  - [Table of contents](#table-of-contents)
+  - [Resumen](#resumen)
+    - [Requisitos del desafío](#requisitos-del-desafío)
+    - [Enlaces](#enlaces)
+    - [Construido con:](#construido-con)
+  - [Author](#author)
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Resumen
 
-## 🚀 Project Structure
+### Requisitos del desafío
 
-Inside of your Astro project, you'll see the following folders and files:
+- Una página de inicio que contiene un botón de inicio de sesión y un motor de búsqueda de productos ofrecidos por la empresa.
+- Un banner que contenga descuentos, promociones o informaciónes relevante del momento.
+- Una galería con información del producto, como imagen, nombre del producto, precio y un enlace a la página de descripción del producto.
+- Una página de producto que contiene la imagen, el nombre, la descripción y el precio.
+- Un pie de página con un formulario de contacto y otras informaciónes relevantes.
+- Un formulário de iniciar sesión para autenticar a los usuarios que quieran acceder al menu administrador.
+- Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### Enlaces
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- Solución URL: [Alura-geek](https://alura-geek-viewtransition.netlify.app/)
+- Sítio en línea URL: [SVAM Potafolio](https://svam-alura.netlify.app/)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Construido con:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- JavaScript
+- [Astro](https://astro.build/)
+- [Tailwind](https://tailwindcss.com/)
+- [View Transition](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)
 
-## 🧞 Commands
+## Author
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- GitHub - [StalinAM](https://github.com/StalinAM)
+- ONE – Oracle Next Education - [Oracle](https://www.oracle.com/lad/education/oracle-next-education/)
+- Alura LATAM - [Alura](https://www.aluracursos.com/)

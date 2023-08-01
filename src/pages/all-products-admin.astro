@@ -1,11 +1,11 @@
 ---
-import ListProducts from "../components/ListProducts.astro";
-import Layout from "../layouts/Layout.astro";
-import { products } from "../data/products";
+import Card from "../components/Card.astro";
 import Lupa from "../components/icons/Lupa.astro";
+import { products } from "../data/products";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome">
+<Layout title="Nuevo producto">
   <header
     class="max-w-5xl p-4 flex justify-between items-center mx-auto lg:px-0"
   >
@@ -33,6 +33,7 @@ import Lupa from "../components/icons/Lupa.astro";
         ></svg
       >
     </a>
+
     <a
       id="link-login"
       href="/login"
@@ -40,41 +41,55 @@ import Lupa from "../components/icons/Lupa.astro";
     >
       Login</a
     >
-    <a id="icon-filter" href="/all-products" class="text-gray-700">
-      <Lupa />
-    </a>
   </header>
-  <main class="bg-gray-100 flex flex-col w-full">
-    <section
-      class="bg-[url('/bg.webp')] h-[200px] bg-cover bg-centerp-4 bg-center"
+  <main class="px-4 pb-4 p-4 xl:p-0 lg:max-w-5xl mx-auto">
+    <div
+      class="flex flex-col md:flex-row justify-between items-start my-6 gap-4"
     >
-      <div
-        class="flex flex-col p-4 lg:p-0 lg:max-w-5xl text-white justify-end items-start m-auto md:mt-[38px]"
+      <h1 class="text-2xl font-semibold">Todos los productos</h1>
+      <form
+        class="flex py-2 px-4 md:w-36 lg:w-96 items-center bg-zinc-200 rounded-xl"
       >
-        <h2 class="text-3xl font-semibold pb-4">Febrero Promocional</h2>
-        <p class="pb-2">Productos seleccionados con 33% de descuento</p>
-        <a
-          class="bg-blue-600 py-2 px-6 rounded block hover:bg-blue-900"
-          href="/">Ver Consolas</a
-        >
-      </div>
-    </section>
-    <div class="px-4 pb-4 p-4 xl:p-0 lg:max-w-5xl lg:mx-auto mb-10">
-      <ListProducts
-        title="Star Wars"
-        listProducts={products.filter((item) => item.category === "Star Wars")}
-      />
-      <ListProducts
-        title="Consolas"
-        listProducts={products.filter((item) => item.category === "Consolas")}
-      />
-      <ListProducts
-        title="Varios"
-        listProducts={products.filter(
-          (item) =>
-            item.category !== "Consolas" && item.category !== "Star Wars"
-        )}
-      />
+        <span class="opacity-40 inline-block">
+          <Lupa />
+        </span>
+        <input
+          placeholder="Buscar item"
+          class="ml-2 bg-transparent focus:border-white focus-visible:outline-none focus:ring-white rounded w-full"
+          type="text"
+          name="name-product"
+          id="product-filter"
+        />
+      </form>
+      <a
+        href="/new-product"
+        class="bg-blue-600 border-blue-600 border-[1px] text-gray-100 font-medium py-2 px-6 rounded block hover:bg-blue-700 hover:text-gray-100"
+      >
+        Agregar Producto</a
+      >
     </div>
+    <ul
+      class="grid grid-cols-box-s gap-x-4 gap-y-5 mb-10 justify-center lg:max-w-6xl"
+    >
+      {
+        products.map((item) => (
+          <Card
+            id={item.id}
+            name={item.name}
+            price={item.price}
+            description={item.description}
+            image={item.image}
+            category={item.category}
+            admin={true}
+          />
+        ))
+      }
+    </ul>
   </main>
 </Layout>
+<script>
+  const filterProduct = document.querySelector("#product-filter");
+  filterProduct.addEventListener("keyup", () => {
+    console.log(filterProduct.value);
+  });
+</script>
