@@ -44,51 +44,17 @@ import Input from "../components/Input.astro";
     class="bg-gray-100 flex items-center flex-col min-h-[60vh] w-full justify-center gap-4 mx-auto p-4"
   >
     <h2 class="font-bold lg:text-lg">Iniciar Sesión</h2>
-    <form class="flex flex-col w-72 lg:w-96 gap-4 items-center" action="">
-      <div class="w-full [&>input]:bg-white [&>input]:py-2 [&>input]:px-4">
-        <Input
-          id="email-address"
-          type="text"
-          placeholder="Escriba su correo electrónico"
-        />
-        <span class="text-red-500 hidden">Correo no válido</span>
-      </div>
-      <div class="w-full [&>input]:bg-white [&>input]:py-2 [&>input]:px-4">
-        <Input id="password" type="text" placeholder="Escriba su contraseña" />
-        <span class="text-red-500 hidden">Correo no válido</span>
-      </div>
-      <Button id="submit-login" text="Entrar" />
+    <form
+      class="flex flex-col w-72 lg:w-96 gap-4 [&>input]:bg-white [&>input]:py-2 [&>input]:px-4 [&>button]:w-full items-center"
+      action=""
+    >
+      <Input
+        type="text"
+        placeholder="Escriba su correo electrónico"
+        id="email-address"
+      />
+      <Input type="text" placeholder="Escriba su contraseña" id="password" />
+      <Button text="Entrar" />
     </form>
   </main>
 </Layout>
-<script>
-  const EMAIL_REGEX = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-  const email = document.querySelector("#email-address");
-  const emailSpan = document.querySelector("#email-address+span");
-  const password = document.querySelector("#password");
-  const passwordSpan = document.querySelector("#password+span");
-  const btnSubmit = document.querySelector("#submit-login");
-  email.addEventListener("input", validateEmail);
-  function validateEmail() {
-    if (!EMAIL_REGEX.test(email.value)) {
-      email.classList.remove("focus:border-js");
-      email.classList.add("focus:border-red-500");
-      emailSpan.classList.remove("hidden");
-    } else {
-      email.classList.remove("focus:border-red-500");
-      email.classList.add("focus:border-js");
-      emailSpan.classList.add("hidden");
-    }
-    checkFormValidity();
-  }
-  function checkFormValidity() {
-    if (email.value && name.value && subject.value && message.value) {
-      btnSubmit.disabled = false;
-    } else {
-      btnSubmit.disabled = true;
-    }
-  }
-  function handleClick(e) {
-    e.preventDefault();
-  }
-</script>
